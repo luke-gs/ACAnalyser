@@ -58,12 +58,19 @@ public class NarrativeAnalyser {
 
         return people.map { person in
 
-            let startOfSentence = text[..<person.range.lowerBound].lastIndex(of: ".") ?? text.startIndex
-            let endOfSentence = text[person.range.upperBound...].firstIndex(of: ".") ?? text.endIndex
+            let delimiters = [".", "?"]
+
+            let startOfSentence = text[..<person.range.lowerBound].lastIndex(where: {
+                delimiters.contains(String($0))
+            }) ?? text.startIndex
+            let endOfSentence = text[person.range.upperBound...].firstIndex(where: {
+                delimiters.contains(String($0))
+            }) ?? text.endIndex
 
             let entityClassifier = try! NLModel(mlModel: EntityClassifier().model)
             let range = text.rangeOfComposedCharacterSequences(for: startOfSentence..<endOfSentence)
             let foundText = String(text[range])
+
             let classifcation = entityClassifier.predictedLabel(for: foundText) ?? "Unclassified"
             return Association(name: person.value, type: classifcation)
         }

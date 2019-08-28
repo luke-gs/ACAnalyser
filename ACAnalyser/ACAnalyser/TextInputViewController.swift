@@ -24,13 +24,20 @@ class TextInputViewController: UIViewController {
 
         textView.delegate = self
 
-        navigationItem.largeTitleDisplayMode = .always
-        let analyseButton = UIBarButtonItem(title: "Analyse", style: .plain, target: self, action: #selector(analyse))
-        analyseButton.isEnabled = false
-        navigationItem.rightBarButtonItem = analyseButton
+        let intent = CreateReportIntent()
+        intent.suggestedInvocationPhrase = "Create Report"
+
+        let interaction = INInteraction(intent: intent, response: nil)
+
+        interaction.donate { (error) in
+            if error != nil {
+
+            }
+            print("wooo")
+        }
     }
 
-    @objc private func analyse() {
+    private func analyse() {
 
         let classification = try! analyser.classify(scheme: .nameType, from: text)
         print(try! classification.get())
@@ -48,16 +55,13 @@ class TextInputViewController: UIViewController {
         }
     }
 
-    func setupIntents() {
-        let activity = NSUserActivity(activityType: "createReport")
-    }
-
 }
 
 extension TextInputViewController: UITextViewDelegate {
 
     func textViewDidChange(_ textView: UITextView) {
-        navigationItem.rightBarButtonItem?.isEnabled = textView.text.isEmpty == false
+        guard textView.text.isEmpty != true else { return }
+        analyse()
     }
 
 }

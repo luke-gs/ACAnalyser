@@ -18,8 +18,47 @@
 		468D18C723163C3F002ACA97 /* EntityClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 468D18C623163C3F002ACA97 /* EntityClassifier.mlmodel */; };
 		468D18CA23164A66002ACA97 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468D18C923164A66002ACA97 /* Intents.framework */; };
 		468D18CC23164A72002ACA97 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468D18CB23164A72002ACA97 /* IntentsUI.framework */; };
+		468D18FB231654B4002ACA97 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D18FA231654B4002ACA97 /* IntentHandler.swift */; };
+		468D1902231654B4002ACA97 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468D18CB23164A72002ACA97 /* IntentsUI.framework */; };
+		468D1905231654B4002ACA97 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D1904231654B4002ACA97 /* IntentViewController.swift */; };
+		468D1908231654B4002ACA97 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468D1906231654B4002ACA97 /* MainInterface.storyboard */; };
+		468D190C231654B4002ACA97 /* CreateReportIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 468D1901231654B4002ACA97 /* CreateReportIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		468D190F231654B4002ACA97 /* CreateReportIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 468D18F8231654B4002ACA97 /* CreateReportIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		468D1918231654CA002ACA97 /* CreateReport.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 468D1917231654CA002ACA97 /* CreateReport.intentdefinition */; };
 		6DD1AD7C5D4951DFFBFA1738 /* Pods_ACAnalyser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31FF94E7DD044A8A670A824 /* Pods_ACAnalyser.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		468D190A231654B4002ACA97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 461713A62315FF8D00FC3B93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 468D1900231654B4002ACA97;
+			remoteInfo = CreateReportIntentUI;
+		};
+		468D190D231654B4002ACA97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 461713A62315FF8D00FC3B93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 468D18F7231654B4002ACA97;
+			remoteInfo = CreateReportIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		468D1910231654B4002ACA97 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				468D190F231654B4002ACA97 /* CreateReportIntent.appex in Embed App Extensions */,
+				468D190C231654B4002ACA97 /* CreateReportIntentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		461713AE2315FF8D00FC3B93 /* ACAnalyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACAnalyser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +75,14 @@
 		468D18C823164A51002ACA97 /* ACAnalyser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ACAnalyser.entitlements; sourceTree = "<group>"; };
 		468D18C923164A66002ACA97 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		468D18CB23164A72002ACA97 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		468D18F8231654B4002ACA97 /* CreateReportIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CreateReportIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		468D18FA231654B4002ACA97 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		468D18FC231654B4002ACA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		468D1901231654B4002ACA97 /* CreateReportIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CreateReportIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		468D1904231654B4002ACA97 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		468D1907231654B4002ACA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		468D1909231654B4002ACA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		468D1917231654CA002ACA97 /* CreateReport.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = CreateReport.intentdefinition; sourceTree = "<group>"; };
 		699D428FBA8FF2A456DB4C9E /* Pods-ACAnalyser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACAnalyser.release.xcconfig"; path = "Target Support Files/Pods-ACAnalyser/Pods-ACAnalyser.release.xcconfig"; sourceTree = "<group>"; };
 		6AE20451BB2333F61FCB7305 /* Pods-ACAnalyser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACAnalyser.debug.xcconfig"; path = "Target Support Files/Pods-ACAnalyser/Pods-ACAnalyser.debug.xcconfig"; sourceTree = "<group>"; };
 		D31FF94E7DD044A8A670A824 /* Pods_ACAnalyser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACAnalyser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +99,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		468D18F5231654B4002ACA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		468D18FE231654B4002ACA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468D1902231654B4002ACA97 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				461713B02315FF8D00FC3B93 /* ACAnalyser */,
+				468D18F9231654B4002ACA97 /* CreateReportIntent */,
+				468D1903231654B4002ACA97 /* CreateReportIntentUI */,
 				461713AF2315FF8D00FC3B93 /* Products */,
 				DA06E68C7FDD99C11A1C7687 /* Pods */,
 				6552D5967920FE970BE27EE5 /* Frameworks */,
@@ -69,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				461713AE2315FF8D00FC3B93 /* ACAnalyser.app */,
+				468D18F8231654B4002ACA97 /* CreateReportIntent.appex */,
+				468D1901231654B4002ACA97 /* CreateReportIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,8 +153,28 @@
 				461713BC2315FF8E00FC3B93 /* LaunchScreen.storyboard */,
 				461713BF2315FF8E00FC3B93 /* Info.plist */,
 				461713C5231602C500FC3B93 /* TextAnalyser.swift */,
+				468D1917231654CA002ACA97 /* CreateReport.intentdefinition */,
 			);
 			path = ACAnalyser;
+			sourceTree = "<group>";
+		};
+		468D18F9231654B4002ACA97 /* CreateReportIntent */ = {
+			isa = PBXGroup;
+			children = (
+				468D18FA231654B4002ACA97 /* IntentHandler.swift */,
+				468D18FC231654B4002ACA97 /* Info.plist */,
+			);
+			path = CreateReportIntent;
+			sourceTree = "<group>";
+		};
+		468D1903231654B4002ACA97 /* CreateReportIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				468D1904231654B4002ACA97 /* IntentViewController.swift */,
+				468D1906231654B4002ACA97 /* MainInterface.storyboard */,
+				468D1909231654B4002ACA97 /* Info.plist */,
+			);
+			path = CreateReportIntentUI;
 			sourceTree = "<group>";
 		};
 		6552D5967920FE970BE27EE5 /* Frameworks */ = {
@@ -122,15 +208,52 @@
 				461713AB2315FF8D00FC3B93 /* Frameworks */,
 				461713AC2315FF8D00FC3B93 /* Resources */,
 				CD88076007DAD630402B99B6 /* [CP] Embed Pods Frameworks */,
+				468D1910231654B4002ACA97 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				468D190B231654B4002ACA97 /* PBXTargetDependency */,
+				468D190E231654B4002ACA97 /* PBXTargetDependency */,
 			);
 			name = ACAnalyser;
 			productName = ACAnalyser;
 			productReference = 461713AE2315FF8D00FC3B93 /* ACAnalyser.app */;
 			productType = "com.apple.product-type.application";
+		};
+		468D18F7231654B4002ACA97 /* CreateReportIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 468D1916231654B4002ACA97 /* Build configuration list for PBXNativeTarget "CreateReportIntent" */;
+			buildPhases = (
+				468D18F4231654B4002ACA97 /* Sources */,
+				468D18F5231654B4002ACA97 /* Frameworks */,
+				468D18F6231654B4002ACA97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreateReportIntent;
+			productName = CreateReportIntent;
+			productReference = 468D18F8231654B4002ACA97 /* CreateReportIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		468D1900231654B4002ACA97 /* CreateReportIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 468D1915231654B4002ACA97 /* Build configuration list for PBXNativeTarget "CreateReportIntentUI" */;
+			buildPhases = (
+				468D18FD231654B4002ACA97 /* Sources */,
+				468D18FE231654B4002ACA97 /* Frameworks */,
+				468D18FF231654B4002ACA97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreateReportIntentUI;
+			productName = CreateReportIntentUI;
+			productReference = 468D1901231654B4002ACA97 /* CreateReportIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -143,6 +266,12 @@
 				ORGANIZATIONNAME = Gridstone;
 				TargetAttributes = {
 					461713AD2315FF8D00FC3B93 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					468D18F7231654B4002ACA97 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					468D1900231654B4002ACA97 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -161,6 +290,8 @@
 			projectRoot = "";
 			targets = (
 				461713AD2315FF8D00FC3B93 /* ACAnalyser */,
+				468D18F7231654B4002ACA97 /* CreateReportIntent */,
+				468D1900231654B4002ACA97 /* CreateReportIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -173,6 +304,21 @@
 				461713BE2315FF8E00FC3B93 /* LaunchScreen.storyboard in Resources */,
 				461713BB2315FF8E00FC3B93 /* Assets.xcassets in Resources */,
 				461713B92315FF8D00FC3B93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		468D18F6231654B4002ACA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		468D18FF231654B4002ACA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468D1908231654B4002ACA97 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,11 +376,41 @@
 				461713C6231602C500FC3B93 /* TextAnalyser.swift in Sources */,
 				4652417A231624C300A6E010 /* ReportClassifier.mlmodel in Sources */,
 				461713B22315FF8D00FC3B93 /* AppDelegate.swift in Sources */,
+				468D1918231654CA002ACA97 /* CreateReport.intentdefinition in Sources */,
 				461713B42315FF8D00FC3B93 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		468D18F4231654B4002ACA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468D18FB231654B4002ACA97 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		468D18FD231654B4002ACA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468D1905231654B4002ACA97 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		468D190B231654B4002ACA97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 468D1900231654B4002ACA97 /* CreateReportIntentUI */;
+			targetProxy = 468D190A231654B4002ACA97 /* PBXContainerItemProxy */;
+		};
+		468D190E231654B4002ACA97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 468D18F7231654B4002ACA97 /* CreateReportIntent */;
+			targetProxy = 468D190D231654B4002ACA97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		461713B72315FF8D00FC3B93 /* Main.storyboard */ = {
@@ -251,6 +427,14 @@
 				461713BD2315FF8E00FC3B93 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		468D1906231654B4002ACA97 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				468D1907231654B4002ACA97 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -374,6 +558,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6AE20451BB2333F61FCB7305 /* Pods-ACAnalyser.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ACAnalyser/ACAnalyser.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +579,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 699D428FBA8FF2A456DB4C9E /* Pods-ACAnalyser.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ACAnalyser/ACAnalyser.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -405,6 +591,82 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Gridstone.ACAnalyser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		468D1911231654B4002ACA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FNW7L4X44S;
+				INFOPLIST_FILE = CreateReportIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gridstone.ACAnalyser.CreateReportIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		468D1912231654B4002ACA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FNW7L4X44S;
+				INFOPLIST_FILE = CreateReportIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gridstone.ACAnalyser.CreateReportIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		468D1913231654B4002ACA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FNW7L4X44S;
+				INFOPLIST_FILE = CreateReportIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gridstone.ACAnalyser.CreateReportIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		468D1914231654B4002ACA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FNW7L4X44S;
+				INFOPLIST_FILE = CreateReportIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gridstone.ACAnalyser.CreateReportIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,6 +689,24 @@
 			buildConfigurations = (
 				461713C32315FF8E00FC3B93 /* Debug */,
 				461713C42315FF8E00FC3B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		468D1915231654B4002ACA97 /* Build configuration list for PBXNativeTarget "CreateReportIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				468D1913231654B4002ACA97 /* Debug */,
+				468D1914231654B4002ACA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		468D1916231654B4002ACA97 /* Build configuration list for PBXNativeTarget "CreateReportIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				468D1911231654B4002ACA97 /* Debug */,
+				468D1912231654B4002ACA97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
